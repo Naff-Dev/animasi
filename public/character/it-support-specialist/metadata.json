@@ -1,0 +1,164 @@
+{
+  "id": "it-support-specialist",
+  "name": "IT Support Specialist",
+  "series": "SATU HARI SATU FAKTA KERJA DI BAGIAN IT SUPPORT",
+  "version": "2.0.0",
+  "originality": "Procedural 3D stylized cartoon Three.js character built modularly from primitives",
+  "metrics": {
+    "hipHeight": 0.84,
+    "upperLegLength": 0.36,
+    "lowerLegLength": 0.36,
+    "footHeight": 0.1,
+    "upperArmLength": 0.225,
+    "lowerArmLength": 0.205,
+    "headRadius": 0.162,
+    "totalStandingHeight": 1.82
+  },
+  "palette": {
+    "skin": "#F3C6A5",
+    "hair": "#162038",
+    "hoodieNavy": "#162954",
+    "hoodieDeepNavy": "#0F1D3D",
+    "cargoBlack": "#111827",
+    "cargoPocket": "#1B2436",
+    "electricBlue": "#1D63ED",
+    "cyanNeon": "#06B6D4",
+    "cyanGlow": "#22D3EE",
+    "pureWhite": "#F8FAFC",
+    "offWhite": "#E2E8F0",
+    "headsetDark": "#0B1120",
+    "glassesFrame": "#0F172A",
+    "chromeSteel": "#CBD5E1",
+    "irisBlue": "#1D4ED8",
+    "pupilDark": "#090D16",
+    "lipWarm": "#D97B6C",
+    "laptopAluminum": "#1E293B"
+  },
+  "assets": {
+    "glb": "model/character.glb",
+    "glbBytes": 1067564,
+    "meshCount": 140,
+    "vertexCount": 19437,
+    "textures": [
+      "textures/chest-logo-it-support.png",
+      "textures/laptop-screen.png",
+      "textures/palette-swatch.png"
+    ],
+    "preview": "previews/character-preview.png"
+  },
+  "joints": [
+    "Hips",
+    "Spine",
+    "Chest",
+    "Neck",
+    "Head",
+    "LeftShoulder",
+    "LeftUpperArm",
+    "LeftElbow",
+    "LeftWrist",
+    "RightShoulder",
+    "RightUpperArm",
+    "RightElbow",
+    "RightWrist",
+    "LeftHip",
+    "LeftKnee",
+    "LeftAnkle",
+    "RightHip",
+    "RightKnee",
+    "RightAnkle"
+  ],
+  "animations": [
+    "idle",
+    "walking",
+    "running",
+    "sitting",
+    "typing",
+    "thinking",
+    "pointing",
+    "explaining",
+    "surprised",
+    "confused",
+    "panicking",
+    "troubleshooting",
+    "celebrating",
+    "facepalm",
+    "looking_at_screen"
+  ],
+  "embeddedAnimationClips": [
+    {
+      "name": "idle",
+      "durationSec": 2,
+      "tracks": 20
+    },
+    {
+      "name": "walking",
+      "durationSec": 2,
+      "tracks": 20
+    },
+    {
+      "name": "running",
+      "durationSec": 2,
+      "tracks": 20
+    },
+    {
+      "name": "sitting",
+      "durationSec": 2,
+      "tracks": 20
+    },
+    {
+      "name": "typing",
+      "durationSec": 2,
+      "tracks": 20
+    },
+    {
+      "name": "thinking",
+      "durationSec": 2,
+      "tracks": 20
+    },
+    {
+      "name": "pointing",
+      "durationSec": 2,
+      "tracks": 20
+    },
+    {
+      "name": "explaining",
+      "durationSec": 2,
+      "tracks": 20
+    },
+    {
+      "name": "surprised",
+      "durationSec": 2,
+      "tracks": 20
+    },
+    {
+      "name": "confused",
+      "durationSec": 2,
+      "tracks": 20
+    },
+    {
+      "name": "panicking",
+      "durationSec": 2,
+      "tracks": 20
+    },
+    {
+      "name": "troubleshooting",
+      "durationSec": 2,
+      "tracks": 20
+    },
+    {
+      "name": "celebrating",
+      "durationSec": 2,
+      "tracks": 20
+    },
+    {
+      "name": "facepalm",
+      "durationSec": 2,
+      "tracks": 20
+    },
+    {
+      "name": "looking_at_screen",
+      "durationSec": 2,
+      "tracks": 20
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Support Specialist 3D Viewer (Three.js + OrbitControls)</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overflow: hidden;
+        background: #0a1326;
+        color: #f8fafc;
+        font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+      }
+      #canvas-mount {
+        position: fixed;
+        inset: 0;
+      }
+      .hud-header {
+        position: fixed;
+        top: 20px;
+        left: 24px;
+        background: rgba(15, 23, 42, 0.82);
+        border: 1px solid rgba(34, 211, 238, 0.35);
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
+        padding: 14px 18px;
+        pointer-events: none;
+        max-width: 340px;
+      }
+      .hud-title {
+        font-size: 16px;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        color: #22d3ee;
+      }
+      .hud-sub {
+        margin-top: 4px;
+        font-size: 12px;
+        line-height: 1.45;
+        color: #cbd5e1;
+      }
+      .hud-controls {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        background: rgba(15, 23, 42, 0.86);
+        border: 1px solid rgba(56, 189, 248, 0.3);
+        backdrop-filter: blur(12px);
+        border-radius: 18px;
+        padding: 10px 14px;
+        max-width: min(92vw, 820px);
+      }
+      button {
+        appearance: none;
+        border: 1px solid rgba(148, 163, 184, 0.32);
+        background: rgba(30, 41, 59, 0.9);
+        color: #e2e8f0;
+        padding: 7px 13px;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.16s ease;
+      }
+      button:hover {
+        border-color: #22d3ee;
+        color: #ffffff;
+      }
+      button.active {
+        background: #1d63ed;
+        border-color: #22d3ee;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="canvas-mount"></div>
+
+    <div class="hud-header">
+      <div class="hud-title" id="viewer-char-title">IT SUPPORT SPECIALIST 3D</div>
+      <div class="hud-sub">
+        Drag untuk putar 360 derajat, scroll untuk zoom, klik kanan untuk pan. Pilih karakter solo atau mode interaksi kantor!
+      </div>
+    </div>
+
+    <div class="hud-controls">
+      <button type="button" data-role="it_support" class="active">IT Support</button>
+      <button type="button" data-role="office_worker">Raka (Staff)</button>
+      <button type="button" data-role="manager">Pak Bos (Manajer)</button>
+      <button type="button" data-role="finance_staff">Sari (Finance)</button>
+      <button type="button" id="btn-interaction">Interaksi 4 Karakter</button>
+      <button type="button" data-anim="idle" class="active">Idle (Prop)</button>
+      <button type="button" data-anim="explaining">Explaining</button>
+      <button type="button" data-anim="pointing">Pointing</button>
+      <button type="button" data-anim="thinking">Thinking</button>
+      <button type="button" data-anim="panicking">Panicking</button>
+      <button type="button" data-anim="troubleshooting">Troubleshooting</button>
+      <button type="button" data-anim="celebrating">Celebrating</button>
+      <button type="button" id="btn-autorotate">Auto Rotate 360</button>
+      <button type="button" id="btn-blink">Blink</button>
+      <button type="button" id="btn-laptop">Prop: Auto</button>
+      <button type="button" id="btn-theme">Server Room: Futuristic</button>
+      <button type="button" id="btn-reset">Reset View</button>
+    </div>
+
+    <script type="module" src="./specialist-viewer.js"></script>
+  </body>
+</html>
+
