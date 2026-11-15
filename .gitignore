@@ -1,7 +1,19 @@
-node_modules
-dist
+/node_modules
+/dist
 .DS_Store
 .env
+.env.*
+!.env.example
 
-# Ignore the output video from Git but not videos you import into src/.
+# Ignore output videos and renders
 out
+*.mp4
+*.webm
+*.zip
+*.tar.gz
+
+# MCP folders
+**/node_modules
+!mcp/flow-mcp/dist
+!mcp/flow-mcp/dist/**
+

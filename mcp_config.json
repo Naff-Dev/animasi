@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "flow": {
+      "command": "node",
+      "args": ["mcp/flow-mcp/dist/index.js"]
+    },
+    "aistudio-tts": {
+      "command": "node",
+      "args": ["mcp/aistudio-tts-mcp/index.js"]
+    }
+  }
+}

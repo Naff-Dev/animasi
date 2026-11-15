@@ -1,0 +1,18 @@
+{
+  "name": "aistudio-tts-mcp",
+  "version": "1.0.0",
+  "description": "MCP Server for Google AI Studio Speech Generator (gemini-3.8-flash-tts)",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "aistudio-tts-mcp": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "playwright-core": "^1.50.0"
+  }
+}
+
